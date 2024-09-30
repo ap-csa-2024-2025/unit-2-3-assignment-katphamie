@@ -3,6 +3,13 @@ public class Classwork
   public static void main(String[] args)
   {
     System.out.println(firstLastN("dictionary", 3));
+
+    System.out.println(delEnd("library", 5));
+
+    System.out.println(compareLower("animal", "fanimal"));
+
+  // l i b r a r y
+  // 0 1 2 3 4 5 6 7
   }
 
   // write solutions to problems below
@@ -24,19 +31,24 @@ public class Classwork
     return output;
   }
 
+  // DelEnd
+  public static String delEnd(String word, int n)
+  {
+    String output = new String();
 
+    int stop = word.length() - n;
+    // l i b r a r y
+    // 0 1 2 3 4 5 6 7
 
+    String first = word.substring(0, stop);
+    output = first;
+    return output;
+  }
 
-//DelEnd
-public static void main(String[] args)
-{
-  System.out.println(delEnd("library", 5))
-}
-
-public static String delEnd(String word, int n)
-{
-  String output = new String();
-
-  String first
-}
+  public static int compareLower(String word1, String word2)
+  {
+    word1 = word1.toLowerCase();
+    word2 = word2.toLowerCase();
+    return word1.compareTo(word2);
+  }
 }
